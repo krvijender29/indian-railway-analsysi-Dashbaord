@@ -9,7 +9,7 @@ import streamlit as st
 @st.cache_data
 def load_train_data():
 
-    with open("data/trains.json", "r") as file:
+    with open("Data/trains.json", "r") as file:
         train_data = json.load(file)
 
     train_df = pd.json_normalize(train_data["features"])
@@ -23,7 +23,7 @@ def load_train_data():
 @st.cache_data
 def load_station_data():
 
-    with open("data/stations.json", "r") as file:
+    with open("Data/stations.json", "r") as file:
         station_data = json.load(file)
 
     station_df = pd.json_normalize(station_data["features"])
@@ -37,7 +37,7 @@ def load_station_data():
 @st.cache_data
 def load_schedule_data():
 
-    with open("data/schedules.json", "r") as file:
+    with open("Data/schedules.json", "r") as file:
         schedule_data = json.load(file)
 
     schedule_df = pd.DataFrame(schedule_data)
