@@ -1,8 +1,7 @@
-st.markdown("---")
+import streamlit as st
+import plotly.express as px
 
-st.caption(
-    "Indian Railway Dashboard | Station Analysis"
-)
+from utils.data_loader import load_schedule_data
 
 st.set_page_config(
     page_title="Schedule Analysis",
