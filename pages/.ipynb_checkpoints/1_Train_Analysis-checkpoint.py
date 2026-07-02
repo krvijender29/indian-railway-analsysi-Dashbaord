@@ -134,3 +134,12 @@ st.plotly_chart(
     fig,
     use_container_width=True
 )
+
+
+st.warning(
+    """
+    **Disclaimer:** This dashboard is built for educational and portfolio purposes. 
+    The datasets used are sample/publicly available data and may not accurately represent 
+    the current Indian Railways network, schedules, routes, or operational information.
+    """
+)

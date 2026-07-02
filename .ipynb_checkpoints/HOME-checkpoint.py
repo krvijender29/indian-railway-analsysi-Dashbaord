@@ -85,3 +85,13 @@ st.markdown("""
 st.markdown("---")
 
 st.caption("Created by Vijender | Data Analyst Portfolio Project")
+
+st.markdown("---")
+
+st.warning(
+    """
+    **Disclaimer:** This dashboard is built for educational and portfolio purposes. 
+    The datasets used are sample/publicly available data and may not accurately represent 
+    the current Indian Railways network, schedules, routes, or operational information.
+    """
+)
